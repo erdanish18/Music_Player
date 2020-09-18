@@ -1,3 +1,3 @@
-# Music_Player
+# Music Player
 A Basic Music Player using Android Studio
 
