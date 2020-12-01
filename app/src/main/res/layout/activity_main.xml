@@ -9,13 +9,50 @@
     tools:ignore="Overdraw">
 
     <com.mikhaellopez.circularimageview.CircularImageView
-        android:layout_width="230dp"
-        android:layout_height="230dp"
+        android:id="@+id/circularimageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
-        app:civ_border_color="#000000"
-        android:src="@drawable/album_art"/>
+        android:src="@drawable/album_art"
+        app:civ_border_color="#000000" />
+
+    <TextView
+        android:id="@+id/tVVolume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sbVolume"
+        android:layout_below="@+id/circularimageview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="34dp"
+        android:text="Volume: " />
+
+    <SeekBar
+        android:id="@+id/sbVolume"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/circularimageview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="312dp"
+        android:alpha="1" />
 
     <Button
         android:id="@+id/btn_play"
